@@ -15,6 +15,7 @@
     stylus的理解和使用
         结构化, 变量, 函数/minxin(混合)
     vue-router的理解和使用
+        router-view/router-link/keep-alive
         $router: 路由器对象, 包含一些操作路由的功能函数, 来实现编程式导航(跳转路由)
         $route: 当前路由对象, 一些当前路由信息数据的容器, path/meta/query/params
     项目路由拆分
@@ -38,3 +39,9 @@
     ajax请求库: axios
     ajax请求函数封装: axios + promise
     接口请求函数封装: 每个后台接口
+
+
+# day02
+## 1. 异步数据
+
+## 2. 登陆/注册
