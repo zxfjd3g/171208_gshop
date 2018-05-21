@@ -88,3 +88,56 @@
     3). 后台返回了数据, 但页面没有显示?
         vuex中是否有
         组件中是否读取
+        
+# day03
+## 1. 完成登陆/注册功能
+    1). 2种方式
+       手机号/短信验证码登陆
+       用户名/密码/图片验证码登陆
+    2). 登陆的基本流程
+       表单前台验证, 如果不通过, 提示
+       发送ajax请求, 得到返回的结果
+       根据结果的标识(code)来判断登陆请求是否成功
+           1: 不成功, 显示提示
+           0. 成功, 保存用户信息, 返回到上次路由
+    3). vue自定义事件
+       绑定监听: @eventName="fn"  function fn (data) {// 处理}
+       分发事件: this.$emit('eventName', data)
+    4). 注意:
+       使用network查看请求(路径/参数/请求方式/响应数据)
+       使用vue的chrome插件查看vuex中的state和组件中的数据
+       使用debugger语句调试代码
+       实参类型与形参类型的匹配问题
+       
+## 2. 搭建商家整体界面
+    1). 拆分界面路由
+    2). 路由的定义/配置|使用
+
+## 3. 模拟(mock)数据/接口
+    1). 前后台分离的理解
+    2). mockjs的理解和使用
+    3). jons数据设计的理解
+     
+## 4. ShopHeader组件
+    1). 异步显示数据效果的编码流程
+        ajax
+          ajax请求函数
+          接口请求函数
+        vuex
+          state
+          mutation-types
+          actions
+          mutations
+        组件
+          dispatch(): 异步获取后台数据到vuex的state
+          mapState(): 从vuex的state中读取对应的数据
+          模板中显示
+    2). 初始显示异常
+        情况1: Cannot read property 'xxx' of undefined"
+        原因: 初始值是空对象, 内部没有数据, 而模块中直接显示3层表达式
+        解决: 使用v-if指令
+        
+        情况2: Cannot read property 'xxx' of null"
+     
+    3). vue transition动画
+    
