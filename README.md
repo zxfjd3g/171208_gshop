@@ -141,3 +141,8 @@
      
     3). vue transition动画
     
+# day04
+## 1. ShopGoods组件
+## 2. CartControl组件
+## 3. ShopCart组件
+## 4. Food组件
